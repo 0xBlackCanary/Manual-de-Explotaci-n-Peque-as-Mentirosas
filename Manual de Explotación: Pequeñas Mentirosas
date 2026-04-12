@@ -1,0 +1,27 @@
+# 🕵️‍♂️ Manual de Explotación: Pequeñas Mentirosas
+> **Máquina de DockerLabs** | **Dificultad:** Fácil | **Autor:** https://github.com/0xBlackCanary/0xBlackCanary
+
+Bienvenido al manual de explotación de la máquina "Pequeñas Mentirosas". Este repositorio contiene la metodología completa de intrusión y escalada de privilegios realizada en un entorno controlado.
+
+---
+
+## 🖥️ Acceso al Manual Interactivo
+Si prefieres ver este manual con una interfaz **Cyberpunk Terminal**, puedes visualizar el archivo HTML incluido en este repositorio.
+
+---
+
+## 🛠️ Herramientas y Tecnologías
+- **SO:** Kali Linux
+- **Reconocimiento:** Nmap, Gobuster
+- **Fuerza Bruta:** Hydra
+- **Criptografía:** OpenSSL (AES-256-CBC)
+- **Entorno:** Docker (DockerLabs)
+
+---
+
+## 📝 Resumen del Proceso
+
+### 1. Reconocimiento 🔍
+Identificación de la IP mediante el script de despliegue y escaneo de puertos:
+```bash
+sudo nmap -p- --open -sS -sC -sV --min-rate 5000 -n -Pn 172.17.0.2
